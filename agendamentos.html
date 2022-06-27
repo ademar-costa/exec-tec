@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ademar Costa">
+        <meta name="keywords" content="tecnologia, suporte, manuteção, desenvolvimento, consultoria">
+        <meta name="description" content="Mundo da Tecnologia">
+        <link rel="stylesheet" href="style.css">
+        <title>Agendamentos</title>
+    </head>
+    <body>
+        <nav>
+            <div><a class="home" href="#">home</a></div>
+            <a href="#">serviços</a>
+            <a href="#">trabalhos</a>
+            <a href="#">agendamento</a>
+            <a href="#">contatos</a>
+        </nav>    
+        <img id="banner" src="img/banner.png" alt="banner">
+        <h1>Agendamentos</h1>
+        <p>
+            Faça o agendamento e conserte sua máquina de graça!!
+        </p>
+        <form name="form-agenda" action="" method="">
+            <label for="nome"><br>
+                <p>Nome: </p>
+                <input type="text" name="nome" placeholder="Nome Completo" autofocus required size="50" maxlength="50"/>
+            </label>
+            <label for="email"><br>
+                <p>E-mail: </p>
+                <input type="email" name="email" placeholder="usuario@email.com" required size="50" maxlength="50">
+            </label>
+            <label for="senha"><br>
+                <p>Senha: </p>
+                <input type="password" name="senha" placeholder="Apenas Números" required size="30" maxlength="10">
+            </label>
+            <label for="senha"><br>
+                <p>Confirme: </p>
+                <input type="password" name="senha" placeholder="Confirme sua senha" required size="30" maxlength="10">
+            </label>
+            <label for="Celular"><br>
+                <p>Celular: </p>
+                <input type="tel" name="celular" placeholder="(61)91234-6789" size="30" maxlength="14" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+            </label>
+            <br>
+            <br>
+            <input type="submit" name="bt-agendar" value="AGENDAR"/>
+            <input type="reset" name="bt-CANCELAR" value="CANCELAR"/>
+        </form>
+    </body>
+</html>
