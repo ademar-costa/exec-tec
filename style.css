@@ -116,3 +116,8 @@ article{
 video{
     height: 100%;
 }
+footer{
+       background-color:#302F2F; 
+       padding: 50px 200px;
+       color: #fff;
+}
