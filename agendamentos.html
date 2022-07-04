@@ -10,42 +10,57 @@
     </head>
     <body>
         <nav>
-            <div><a class="home" href="#">home</a></div>
+            <div><a class="home" href="#">HOME</a></div>
             <a href="#">serviços</a>
             <a href="#">trabalhos</a>
-            <a href="#">agendamento</a>
+            <a href="#">agaendamentos</a>
             <a href="#">contatos</a>
-        </nav>    
-        <img id="banner" src="img/banner.png" alt="banner">
-        <h1>Agendamentos</h1>
-        <p>
-            Faça o agendamento e conserte sua máquina de graça!!
-        </p>
-        <form name="form-agenda" action="" method="">
-            <label for="nome"><br>
-                <p>Nome: </p>
+        </nav>
+        <header>    
+            <img id="banner" src="img/banner.png" alt="banner">
+        </header>
+        <section id="formulario">
+            <h1>Agendamentos</h1>
+            <p>
+                Faça o agendamento e conserte sua máquina de graça!!
+            </p>
+            <form name="form-agenda" action="" method="">
+                <label for="nome">Nome: </label>
+                <br>
                 <input type="text" name="nome" placeholder="Nome Completo" autofocus required size="50" maxlength="50"/>
-            </label>
-            <label for="email"><br>
-                <p>E-mail: </p>
+                
+                <label for="email">E-mail: </label>
+                <br>
                 <input type="email" name="email" placeholder="usuario@email.com" required size="50" maxlength="50">
-            </label>
-            <label for="senha"><br>
-                <p>Senha: </p>
+                
+                <label for="senha">Senha: </label>
+                <br>
                 <input type="password" name="senha" placeholder="Apenas Números" required size="30" maxlength="10">
-            </label>
-            <label for="senha"><br>
-                <p>Confirme: </p>
+                
+                <label for="senha">Confirme: </label>
+                <br> 
                 <input type="password" name="senha" placeholder="Confirme sua senha" required size="30" maxlength="10">
-            </label>
-            <label for="Celular"><br>
-                <p>Celular: </p>
+               
+                <label for="Celular">Celular: </label>
+                <br>
                 <input type="tel" name="celular" placeholder="(61)91234-6789" size="30" maxlength="14" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
-            </label>
-            <br>
-            <br>
-            <input type="submit" name="bt-agendar" value="AGENDAR"/>
-            <input type="reset" name="bt-CANCELAR" value="CANCELAR"/>
-        </form>
+                <br>
+                <br>
+
+                <label for="msg">Descreva o problema:</label><br/>
+			    <textarea id="msg" cols="80" rows="4"></textarea>
+                <div id="botoes">
+                    <input type="submit" name="bt-agendar" value="AGENDAR"/>
+                    <input type="reset" name="bt-CANCELAR" value="CANCELAR"/>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <a href="https://www.instagram.com/exec.tec/?hl=en" target="_blank"><img src="icon/instagram.png" alt="Instagram" title="Instagram"></a>
+            <a href="mailto:ademar_coosta@hotmail.com?subject=Contato" title="E-mail"> <img src="icon/marketing-de-email.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/ademar-costa-264612202/" target="_blank" title="Linkedin"><img src="icon/linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/ademar-costa" target="_blank" title="GitHub"><img src="icon/github.png" alt="GitHub" ></a>
+            <p>Desenvolvido por Ademar Costa - 2022</p>
+        </footer>
     </body>
 </html>
