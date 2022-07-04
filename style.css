@@ -98,26 +98,26 @@ article{
     border-radius: 5px;
     box-shadow: 2px 2px 7px #00C2CB;
 }
+section{
+    background-color: #302F2F;
+    color: #fff;
+    padding: 100px ;
+}
 /*div de video*/
 #comunidade{
-    display: flex;
-    justify-content: center;
-    margin: 2px;
+
 }
 #text-comunidade{
-    background-color: coral;
-    align-items: center;
-    margin: 100px;
-
+ 
 }
 #video-comunidade{
 
 }
 video{
-    height: 100%;
+   
 }
 footer{
-       background-color:#302F2F; 
-       padding: 50px 200px;
-       color: #fff;
+    background-color:#302F2F; 
+    padding: 50px 200px;
+    color: #fff;
 }
