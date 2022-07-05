@@ -26,42 +26,39 @@ p{
     font-family: 'Roboto', sans-serif;
     margin: 15px;
     text-align: justify;
-    text-indent: 10px;
     line-height: 15px;
 }
-article{
-    display: flex;
-    justify-content: center;
-    padding: 12px 100px;
-    
+header, #banner{
+    width: 100%;
+    height: 90px;
 }
+
 nav{/* Barra de Navegação*/
     background-color: #302F2F;
-    overflow: hidden;
-    width: 100%;
-    height: 30%;
+	padding: 10px;
+    align-items: center;
+    display: flex;
 }
-nav .home{
-    float: left;
-    display: block;
-    padding: 0%;
-    margin: 0 0 0 76px;
-}
-nav, a{
+nav .menu{
+    font-weight: bold;
     color: white;
-    float: right;
     text-decoration: none;
     padding: 0%;
     margin: 0 0 0 20px;
-    font-family: 'Coda', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav a:hover{
     transition: 1s;
     color: #00C2CB;
 }
-header, #banner{
-    width: 100%;
+article{
+    justify-content: center;
+    background-color: #fff;
+    margin: 50px 180px 60px 180px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #000000;
 }
 #formulario{
     padding: 30px 0;
@@ -92,7 +89,7 @@ label{
     color: #212121;
     
 }
-#botoes{
+#botoes{/*Botões da página de agendamento "AGENDAR e CANCELAR"*/
     display: flex;
     margin: 30px;
 }
@@ -106,17 +103,32 @@ input[type="submit"], input[type="reset"]{
 input[type="reset"]{
     background-color: #F47E7E;
 }
-#intro{
-    width: 40%;
-    padding-right: 100px;
-    padding-top: 50px;
+
+#servico{/*Serviços*/
+	background-color: #302F2F;
+    padding: 20px 0 35px 0;
 }
-#img-intro{
-    
-}    
+#servico h2{
+	color: #00C2CB;
+}
+#servico p{
+	color: #fff;
+	margin-top: 15px;
+}
+ul{
+	list-style-type: circle;
+	padding: 20px  50px;
+}
+
+li{
+	font: 1.2rem 'Roboto', sans-serif;
+	color: #FFF;
+	margin-bottom: 10px;
+}  
 #container{/*Trabalhos*/
     display: flex;
     justify-content: center;
+    padding: 20px 0 35px 0;
 }
 .card{
     background-color: #fff;
@@ -132,31 +144,42 @@ input[type="reset"]{
     padding: 20px;
     text-align: center;
 }
-.card:hover{
-    transition: 1s;
-    border-radius: 5px;
-    box-shadow: 2px 2px 7px #00C2CB;
-}
-/*section{
-    background-color: #302F2F;
-    color: #fff;
-    padding: 100px ;
-}*/
 /*div de video*/
-#comunidade{
 
+#comunidade p{
+    text-align: justify;
 }
-#text-comunidade{
- 
+#container-comun{
+    display: flex;
 }
-#video-comunidade{
-
+.comun{
+    padding: 50px;
 }
 video{
-   
+    width: 320px;
+    height: 320px;
 }
 footer{
     background-color:#302F2F; 
     padding: 50px 200px;
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+footer, a{
+    padding: 3px; 
+}
+
+footer p{
+    padding-left: 100px;
+    padding-right: 700px;
+}
+footer :link{
+    color: #00C2CB; 
+    text-decoration: none;
+}
+footer :visited {
+    color: rgb(156, 194, 209);
+    text-decoration: none;
 }
